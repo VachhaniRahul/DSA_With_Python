@@ -33,3 +33,17 @@ print(result)
 
 
 
+# a = ['']
+# s = '23'
+# for i in s:
+#     val = d[i]
+
+#     new = []
+#     for j in a:
+#         for k in val:
+#             new.append(j+k)
+    
+#     a = new
+
+# print(a)
+
