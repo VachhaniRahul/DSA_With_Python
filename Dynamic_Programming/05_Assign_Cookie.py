@@ -40,8 +40,7 @@ while left < len(greed) and right < len(s):
     if s[right] >= greed[left]:
         count += 1
         left += 1
-        right += 1
-    else:
-        right += 1
+    right += 1
+    
 
 print(count)  # Output: 4

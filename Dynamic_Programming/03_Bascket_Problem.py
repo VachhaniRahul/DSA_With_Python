@@ -21,7 +21,8 @@ for j in range(len(nums)):
         if d[nums[i]] == 0:
             del d[nums[i]]
         i += 1
-    
-    maxi = max(maxi, j - i + 1)
+        
+    if len(d)<=2:
+        maxi = max(maxi, j - i + 1)
  
 print(maxi)

@@ -1,3 +1,6 @@
+# In this you have to find how many plateform required to carry on all trains
+
+
 arr = [900, 940, 950, 1100, 1500, 1800]
 dep = [910, 1200, 1120, 1130, 1900, 2000]
 
@@ -33,6 +36,7 @@ print(plateform_count)
 
          
 
+# OPTIMAL SOLUTION t(n log n) s(1)
 arr = [900, 940, 950, 1100, 1500, 1800]
 dep = [910, 1200, 1120, 1130, 1900, 2000]
 

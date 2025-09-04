@@ -15,17 +15,36 @@
 # print(move_zeros(arr)) 
 
 
-def move_zeros(arr):
-    pos = 0 
+# def move_zeros(arr):
+#     pos = 0 
 
-    for i in range(len(arr)):
-        if arr[i] != 0:
-            arr[pos] = arr[i]
-            pos += 1
+#     for i in range(len(arr)):
+#         if arr[i] != 0:
+#             arr[pos] = arr[i]
+#             pos += 1
 
-    for i in range(pos, len(arr)):
-        arr[i] = 0
+#     for i in range(pos, len(arr)):
+#         arr[i] = 0
+
+# arr = [1,2,0,1,0,4,0]
+# move_zeros(arr)
+# print(arr)
+
+
+
+
 
 arr = [1,2,0,1,0,4,0]
+
+def move_zeros(arr):
+    n = len(arr)
+    pos = 0
+
+    for i in range(n):
+        if arr[i] != 0:
+            if i != pos:
+                arr[pos],arr[i] = arr[i],arr[pos]
+            pos += 1
+
 move_zeros(arr)
 print(arr)
